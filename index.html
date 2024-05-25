@@ -6,11 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Пошук зображень</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-c9db6b34.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-0fc460d7.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-4b066c51.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-d5473c51.css">
   </head>
   <body>
-    <form action=""></form>
+    <form class="form">
+      <input
+        type="text"
+        name="input"
+        placeholder="Search images..."
+        autocomplete="off"
+        class="form-input"
+      />
+      <button type="submit" class="search-btn">Searсh</button>
+    </form>
+
+    <div class="loader"></div>
+
+    <ul class="gallery"></ul>
+
     
   </body>
 </html>
