@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Пошук зображень</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <form class="form">
@@ -14,9 +20,12 @@
         name="input"
         placeholder="Search images..."
         autocomplete="off"
+        class="form-input"
       />
-      <button type="submit">Searh</button>
+      <button type="submit" class="search-btn">Searсh</button>
     </form>
+
+    <div class="loader"></div>
 
     <ul class="gallery"></ul>
 

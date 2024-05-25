@@ -12,14 +12,14 @@ function templatePhotos(images) {
       class="gallery-image"
       src="${image.webformatURL}"
       data-source="${image.largeImageURL}"
-      alt="${image.tags}"
+      alt="Tags: ${image.tags}. Likes: ${image.likes},   Views: ${image.views},   Comments: ${image.comments},   Downloads: ${image.downloads}"
     />
   </a>
-  <div>
-  <p class="info-image">${image.likes}</p>
-  <p class="info-image">${image.views}</p>
-  <p class="info-image">${image.comments}</p>
-  <p class="info-image">${image.downloads}</p>
+  <div class="gallery-item-info">
+  <p class="info-image"><b class="info-image-text">Likes</b><span class="info-image-number">${image.likes}</span></p>
+  <p class="info-image"><b class="info-image-text">Views</b><span class="info-image-number">${image.views}</span></p>
+  <p class="info-image"><b class="info-image-text">Comments</b><span class="info-image-number">${image.comments}</span></p>
+  <p class="info-image"><b class="info-image-text">Downloads</b><span class="info-image-number">${image.downloads}</span></p>
   </div>
 </li>`;
     })
@@ -30,6 +30,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
   overlayOpacity: 0.8,
   captionsData: 'alt',
   captionDelay: 250,
+  className: 'modal-image',
 });
 
 export function renderPhotos(images) {
